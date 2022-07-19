@@ -1,7 +1,6 @@
 import os
 from flask import Flask, request, redirect, url_for, render_template
 import shutil
-
 app = Flask(__name__)
 
 
@@ -17,10 +16,11 @@ def upload_file():
     shutil.rmtree('static/tmp')
     os.makedirs('static/tmp')
     print("1ewdec")
-    #保存文件
-    file = request.files['file']
-    file.save('static/tmp/' + file.filename)
-
+    # #保存文件
+    # file = request.files['file']
+    # file.save('static/tmp/' + file.filename)
+    # for file in request.files.getlist('file'):
+    #     print(file)
     #调用训练模型并返回结果
     filename = file.filename
 
@@ -31,7 +31,6 @@ def upload_file():
     # result = "识别结果"
     print(result)
     return render_template('result.html', filename=filename, result=result)
-
 
 if __name__ == '__main__':
     app.run()
