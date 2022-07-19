@@ -23,6 +23,8 @@ def main():
     predictions = model.predict(image)
     print(predictions)
 
+    #删除临时文件
+
 
 if __name__ == '__main__':
     main()

@@ -1,4 +1,5 @@
 import os
+from bs4 import ResultSet
 from flask import Flask, request, redirect, url_for, render_template, flash
 from regex import P
 
@@ -22,6 +23,7 @@ def upload_file():
 
     commmand = "python distinguish.py " + filename
     result = os.popen(commmand).read()
+    return render_template('./result.html', result=result)
 
 
 if __name__ == '__main__':
