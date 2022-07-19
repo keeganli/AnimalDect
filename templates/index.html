@@ -57,13 +57,9 @@
           <div class="row align-items-center justify-content-between text-left">
             <div class="col-md-5 text-right">
               <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li class="has-children">
-                  <a href="#home-section" class="nav-link">Home</a>
-                  <ul class="dropdown">
-                  </ul>
-                </li>
-                <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
-                <li><a href="#about-section" class="nav-link">About</a></li>
+
+                <li><a href="#portfolio-section" class="nav-link">首页</a></li>
+                <li><a href="#about-section" class="nav-link"></a></li>
 
               </ul>
             </div>
@@ -87,9 +83,6 @@
         </div>
 
       </nav>
-
-
-
       <div class="unslate_co--section" id="portfolio-section">
         <div class="container">
           <div class="section-heading-wrap text-center mb-5" data-aos="fade-up">
@@ -106,13 +99,36 @@
 
 
           <div class="portfolio-wrapper">
-            <form action="distinguish" method="post" enctype="multipart/form-data">
+            <!-- <form action="distinguish" method="post" enctype="multipart/form-data">
               <input type="text" name="text" placeholder="Enter text" />
               <input type="file" name="file" />
               <input type="submit" value="识别" />
-            </form>
+            </form> -->
           </div>
 
+
+        </div>
+      </div>
+
+
+      <div class="unslate_co--section" id="portfolio-section">
+        <div class="container">
+          <div class="section-heading-wrap text-center mb-5" data-aos="fade-up">
+            <h2 class="heading-h2 text-center divider">YoYoMax Team</h2>
+
+          </div>
+
+          <div class="relative">
+            <div class="loader-portfolio-wrap">
+              <div class="loader-portfolio"></div>
+            </div>
+          </div>
+          <div id="portfolio-single-holder"></div>
+
+
+          <div class="portfolio-wrapper">
+             //团队介绍
+          </div>
 
         </div>
       </div>
@@ -130,42 +146,33 @@
       <div class="unslate_co--section section-counter bg-light" id="stats-section">
         <div class="container">
           <div class="section-heading-wrap text-center mb-5" data-aos="fade-up">
-            <h2 class="heading-h2 text-center divider">Stats</h2>
+            <h2 class="heading-h2 text-center divider">动物识别</h2>
 
           </div>
 
 
           <div class="row pt-5">
             <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+              
               <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="3982">0</span>
-                </span>
-                <span class="counter-label">Cup of Coffee</span>
+                <img src="static/img/dog1.jpg"  alt="图片加载失败" />
               </div>
             </div>
             <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
               <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="428">0</span>
-                </span>
-                <span class="counter-label">Clients</span>
+                {{result}}
               </div>
             </div>
             <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="48282">0</span>
-                </span>
-                <span class="counter-label">Line of Codes</span>
-              </div>
+              <img src="static/img/horse.jpg"  alt="图片加载失败" />
             </div>
             <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
               <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="7831">0</span>
-                </span>
-                <span class="counter-label">Likes</span>
+                  <form action="distinguish" method="post" enctype="multipart/form-data">
+                  <input type="text" name="text" placeholder="Enter text" />
+                  <input type="file" name="file" />
+                  <input type="submit" value="识别" />
+                </form>
               </div>
             </div>
           </div>
