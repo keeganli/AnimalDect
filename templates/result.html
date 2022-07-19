@@ -70,24 +70,21 @@
                     <div class="col-md-5 text-right">
                         <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
 
-                            <li><a href="#portfolio-section" class="nav-link">首页</a></li>
-                            <li><a href="#about-section" class="nav-link"></a></li>
+                            <li><a href="/" class="nav-link">首页</a></li>
 
                         </ul>
                     </div>
+
                     <div class="col-md-5 text-right text-lg-left">
                         <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                            <li><a href="#stats-section" class="nav-link">Stats</a></li>
-                            <li><a href="#testimonial-section" class="nav-link">Testimonial</a></li>
+                            <li><a href="#stats-section" class="nav-link">动物识别</a></li>
 
-                            <li><a href="#contact-section" class="nav-link">Contact</a></li>
-                        </ul>
-
-                        <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
-                            <li><a href="#" class="js-menu-toggle">Menu</a></li>
+                            <li><a href="#services-section" class="nav-link">物体识别</a></li>
+                            <li><a href="#contact-section" class="nav-link">关于我们</a></li>
                         </ul>
 
                     </div>
+
                 </div>
             </div>
 
@@ -95,8 +92,12 @@
         <div class="unslate_co--section" id="portfolio-section">
             <div class="container">
                 <div class="section-heading-wrap text-center mb-5" data-aos="fade-up">
-                    <h2 class="heading-h2 text-center divider">识别结果: {{ result }}</h2>
-
+                    <h2 class="heading-h2 text-center divider">YoYoMax Team</h2>
+                    {% if filename != NULL%}
+                        <h2 class="heading-h2 text-center divider">识别结果: {{ result }}</h2>
+                        <img src="../static/tmp/{{ filename }}" alt="图片加载失败"/>
+                    {% endif %}
+                        我们很强
                 </div>
 
                 <div class="relative">
@@ -123,11 +124,8 @@
         <div class="unslate_co--section" id="portfolio-section">
             <div class="container">
                 <div class="section-heading-wrap text-center mb-5" data-aos="fade-up">
-                    <img src="../static/tmp/{{ filename }}" alt="图片加载失败"/>
 
-                    <a href="/">
-                        <input type="button" value="返回">
-                    </a>
+
                 </div>
 
                 <div class="relative">
@@ -165,17 +163,16 @@
                     <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
 
                         <div class="counter-v1 text-center">
-                            <img src="../static/img/dog1.jpg" alt="图片加载失败"/>
+                            <img src="static/img/dog1.jpg" alt="图片加载失败"/>
                         </div>
                     </div>
                     <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
                         <div class="counter-v1 text-center">
-
-
+                            {{ result }}
                         </div>
                     </div>
                     <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-                        <img src="../static/img/horse.jpg" alt="图片加载失败"/>
+                        <img src="static/img/horse.jpg" alt="图片加载失败"/>
                     </div>
                     <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                         <div class="counter-v1 text-center">
@@ -203,7 +200,7 @@
         <div class="unslate_co--section bg-light" id="testimonial-section">
             <div class="container">
                 <div class="section-heading-wrap text-center mb-5" data-aos="fade-up">
-                    <h2 class="heading-h2 text-center divider">Testimonials</h2>
+                    <h2 class="heading-h2 text-center divider">关于我们</h2>
 
                 </div>
             </div>
@@ -214,14 +211,8 @@
                         <div class="testimonial-inner-bg">
 
                             <blockquote>
-                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                                there live
-                                the blind texts. Separated they live in Bookmarksgrove right at the coast of the
-                                Semantics, a large
-                                language ocean. A small river named Duden flows by their place and supplies it with the
-                                necessary
-                                regelialia. It is a paradisematic country, in which roasted parts of sentences fly into
-                                your mouth.
+                                成员：
+                                豆子青 乐上天 龙会飞 满的粥
                             </blockquote>
                         </div>
 
