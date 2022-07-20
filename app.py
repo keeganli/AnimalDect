@@ -62,9 +62,17 @@ def upload_file():
     #获取结果并返回
     result = os.popen(commmand).read()
     results = literal_eval(result)
+    print(results)
+    dicti = dict(zip(filenames, results))
+
+    # //print(endResult)
+    # //print(type(endResult))
 
     #filenames:图片名称列表 results:识别结果列表 一一对应
-    return render_template('result.html', filenames=filenames, results=results)
+    return render_template('result.html',
+                           filenames=filenames,
+                           results=results,
+                           dicti=dicti)
 
 
 if __name__ == '__main__':
