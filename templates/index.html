@@ -158,7 +158,7 @@
                                 <input type="text" name="text" placeholder="Enter text"/>
                                 <input type="file" name="file" multiple=""/>
                                 <input type="submit" value="识别" multiple="multiple"/>
-
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -168,8 +168,25 @@
 
 
         <div class="site-section unslate_co--section" id="services-section">
-            <div class="container">
+            <div class="container" >
+                <!-- 左边 -->
 
+            <div style="flex: 1">
+                <form action="objectdect" method="post" enctype="multipart/form-data">
+                    <h2>图片识别模型</h2>
+                    <input type="file" name="object_file" multiple=""/>
+                    <input type="submit" value="识别" multiple="multiple"/>
+                </form>
+            </div>
+                <div style="flex: 1">
+                    <h2>视频识别模型</h2>
+                     <form action="videobjectdect" method="post" enctype="multipart/form-data">
+
+                        <input type="submit" value="识别"/>
+
+                    </form>
+
+                </div>
 
             </div>
         </div>
