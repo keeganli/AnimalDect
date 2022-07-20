@@ -24,7 +24,7 @@ def main():
     predictions = model.predict(image)
 
     # 输出预测结果
-    outcomes = ['狗', '马', '大象', '蝴蝶', '鸡', '猫', '羊']
+    outcomes = ['Dog', 'Horse', 'Elefent', 'butterfly', 'Chicken', 'Cat', 'Sheep']
     result = []
     for index in range(len(predictions)):
         result.append(outcomes[predictions[index].tolist().index(1.0)])

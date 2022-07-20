@@ -6,405 +6,372 @@
 */ -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
+<head>
+    <meta charset="utf-8"/>
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="author" content="Untree.co" />
-    <link rel="shortcut icon" href="favicon.png" />
+    <meta name="author" content="Untree.co"/>
+    <link rel="shortcut icon" href="favicon.png"/>
 
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
 
-    <link rel="stylesheet" href="static/css/vendor/icomoon/style.css" />
-    <link rel="stylesheet" href="static/css/vendor/owl.carousel.min.css" />
-    <link rel="stylesheet" href="static/css/vendor/animate.min.css" />
-    <link rel="stylesheet" href="static/css/vendor/aos.css" />
-    <link rel="stylesheet" href="static/css/vendor/bootstrap.min.css" />
-    <link rel="stylesheet" href="static/css/vendor/jquery.fancybox.min.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="static/css/vendor/icomoon/style.css"/>
+    <link rel="stylesheet" href="static/css/vendor/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="static/css/vendor/animate.min.css"/>
+    <link rel="stylesheet" href="static/css/vendor/aos.css"/>
+    <link rel="stylesheet" href="static/css/vendor/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/css/vendor/jquery.fancybox.min.css"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 
     <!-- Theme Style -->
-    <link rel="stylesheet" href="static/css/style.css" />
-  </head>
+    <link rel="stylesheet" href="static/css/style.css"/>
+</head>
 
-  <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
-    <nav class="unslate_co--site-mobile-menu">
-      <div class="close-wrap d-flex">
+<body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+<nav class="unslate_co--site-mobile-menu">
+    <div class="close-wrap d-flex">
         <a href="#" class="d-flex ml-auto js-menu-toggle">
-          <span class="close-label">Close</span>
-          <div class="close-times">
-            <span class="bar1"></span>
-            <span class="bar2"></span>
-          </div>
-        </a>
-      </div>
-      <div class="site-mobile-inner"></div>
-    </nav>
-
-    <div class="unslate_co--site-wrap">
-      <div class="unslate_co--site-inner">
-        <nav class="unslate_co--site-nav site-nav-target">
-          <div class="container">
-            <div
-              class="row align-items-center justify-content-between text-left"
-            >
-              <div class="col-md-5 text-right">
-                <ul
-                  class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block"
-                >
-                  <li><a href="/" class="nav-link">首页</a></li>
-                </ul>
-              </div>
-
-              <div class="col-md-5 text-right text-lg-left">
-                <ul
-                  class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block"
-                >
-                  <li>
-                    <a href="#stats-section" class="nav-link">动物识别</a>
-                  </li>
-
-                  <li>
-                    <a href="#services-section" class="nav-link">物体识别</a>
-                  </li>
-                  <li>
-                    <a href="#contact-section" class="nav-link">关于我们</a>
-                  </li>
-                </ul>
-              </div>
+            <span class="close-label">Close</span>
+            <div class="close-times">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
             </div>
-          </div>
+        </a>
+    </div>
+    <div class="site-mobile-inner"></div>
+</nav>
+
+<div class="unslate_co--site-wrap">
+    <div class="unslate_co--site-inner">
+        <nav class="unslate_co--site-nav site-nav-target">
+            <div class="container">
+                <div
+                        class="row align-items-center justify-content-between text-left"
+                >
+                    <div class="col-md-5 text-right">
+                        <ul
+                                class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block"
+                        >
+                            <li><a href="/" class="nav-link">首页</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 text-right text-lg-left">
+                        <ul
+                                class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block"
+                        >
+                            <li>
+                                <a href="#stats-section" class="nav-link">动物识别</a>
+                            </li>
+
+                            <li>
+                                <a href="#services-section" class="nav-link">物体识别</a>
+                            </li>
+                            <li>
+                                <a href="#testimonial-section" class="nav-link">关于我们</a>
+                            </li>
+                            <li>
+                                <a href="#contact-section" class="nav-link">联系我们</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
         <div class="unslate_co--section" id="portfolio-section">
-          <div class="container">
-            <div
-              class="section-heading-wrap text-center mb-5"
-              data-aos="fade-up"
-            >
-              <h2 class="heading-h2 text-center divider">YoYoMax小组</h2>
-              {% if filename != NULL %}
-              <h2 class="heading-h2 text-center divider">
-                识别结果: {{ result }}
-              </h2>
-              <img src="../static/tmp/{{ filename }}" alt="图片加载失败" />
-              {% endif %} 豆子青 乐上天 龙会飞 满的粥
-            </div>
-
-            <div class="portfolio-wrapper">
-              <div id="left" style="float: left; width: 50%; height: 100%">
-                <img src="static/img/fon.jpg" />
-              </div>
-              <div id="right" style="float: left; width: 50%; height: 100%">
-                <div id="top" style="float: top; width: 50%; height: 100%">
-                  <th>
-                    <tr>
-                      项目经理
-                    </tr>
-                    <tr>
-                      李康康
-                    </tr>
-                  </th>
-                  <th>
-                    <tr>
-                      技术经理
-                    </tr>
-                    <tr>
-                      李昌乐 周满
-                    </tr>
-                  </th>
-                  <th>
-                    <tr>
-                      产品经理
-                    </tr>
-                    <tr>
-                      李昌乐 周满
-                    </tr>
-                  </th>
-                </div>
+            <div class="container">
                 <div
-                  id="bid"
-                  style="float: bottom; width: 50%; height: 100%"
-                ></div>
-              </div>
+                        class="section-heading-wrap text-center mb-5"
+                        data-aos="fade-up"
+                >
+                    <h2 class="heading-h2 text-center divider">YoYoMax小组</h2>
+                    {% if filename != NULL %}
+                        <h2 class="heading-h2 text-center divider">
+                            识别结果: {{ result }}
+                        </h2>
+                        <img src="../static/tmp/{{ filename }}" alt="图片加载失败"/>
+                    {% endif %} 豆子青 乐上天 龙会飞 满的粥
+                </div>
+
+                <div class="portfolio-wrapper">
+                    <div id="left" style="float: left; width: 50%; height: 100%">
+                        <img src="static/img/fon.jpg" style="width: 300px;height: 300px"/>
+                    </div>
+                    <div id="right" style="float: left; width: 50%; height: 100%">
+                        <div id="top" style="float: top; width: 50%; height: 100%">
+                            <th>
+                                <tr>
+                                    项目经理
+                                </tr>
+                                <tr>
+                                    李康康
+                                </tr>
+                            </th>
+                            <th>
+                                <tr>
+                                    技术经理
+                                </tr>
+                                <tr>
+                                    李昌乐 周满
+                                </tr>
+                            </th>
+                            <th>
+                                <tr>
+                                    产品经理
+                                </tr>
+                                <tr>
+                                    李昌乐 周满
+                                </tr>
+                            </th>
+                        </div>
+                        <div
+                                id="bid"
+                                style="float: bottom; width: 50%; height: 100%"
+                        ></div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
 
         <div class="unslate_co--section" id="portfolio-section"></div>
 
         <div
-          class="unslate_co--section section-counter bg-light"
-          id="stats-section"
+                class="unslate_co--section section-counter bg-light"
+                id="stats-section"
         >
-          <div class="container">
-            <div
-              class="section-heading-wrap text-center mb-5"
-              data-aos="fade-up"
-            >
-              <h2 class="heading-h2 text-center divider">动物识别</h2>
-            </div>
-
-            <div class="row pt-5">
-              <div
-                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3"
-                data-aos="fade-up"
-                data-aos-delay="0"
-              >
-                <div class="counter-v1 text-center">
-                  <img src="static/img/dog1.jpg" alt="图片加载失败" />
+            <div class="container">
+                <div
+                        class="section-heading-wrap text-center mb-5"
+                        data-aos="fade-up"
+                >
+                    <h2 class="heading-h2 text-center divider">动物识别</h2>
                 </div>
-              </div>
-              <div
-                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <div class="counter-v1 text-center">{{ result }}</div>
-              </div>
 
-              <div
-                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <div class="counter-v1 text-center">
-                  <form
-                    action="distinguish"
-                    method="post"
-                    enctype="multipart/form-data"
-                  >
-                    <tr>
-                      <input type="file" name="file" multiple="" />
-                    </tr>
-                    <tr>
-                      <input type="submit" value="识别" multiple="multiple" />
-                    </tr>
-                  </form>
+                <div class="row pt-5">
+                    <div
+                            class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3"
+                            data-aos="fade-up"
+                            data-aos-delay="0"
+                    >
+                        <div class="counter-v1 text-center">
+                            <img src="static/img/sat0.jpg" style="width: 300px;height: 300px"/>
+                        </div>
+                    </div>
+                    <div
+                            class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3"
+                            data-aos="fade-up"
+                            data-aos-delay="100"
+                    >
+                        <div class="counter-v1 text-center">{{ result }}</div>
+                    </div>
+
+                    <div
+                            class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3"
+                            data-aos="fade-up"
+                            data-aos-delay="300"
+                    >
+                        <div class="counter-v1 text-center">
+                            <form
+                                    action="distinguish"
+                                    method="post"
+                                    enctype="multipart/form-data"
+                            >
+                                <tr>
+                                    <input type="file" name="file" multiple=""/>
+                                </tr>
+                                <tr>
+                                    <input type="submit" value="识别" multiple="multiple"/>
+                                </tr>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
         <!-- END .counter -->
-
-        <div class="site-section unslate_co--section" id="services-section">
-                    <input type="submit" value="识别" multiple="multiple"/>
+        <div class="unslate_co--section" id="services-section">
+            <div id="left" style="float: left; width: 50%; height: 100%">
+                <img src="static/img/sat1.jpg" style="width: 300px;height: 300px">
+            </div>
+            <div id="right" style="float: left; width: 50%; height: 100%">
+                <div id="top" style="float: top; width: 50%; height: 100%">
+                    <h2>图片识别</h2>
+                    <form action="objectdect">
+                        <input type="file" name="object_file" multiple="multiple" >
+                        <input type="submit" value="识别" multiple="multiple" style="align-content: center"/>
+                    </form>
+                    <h2>摄像模式</h2>
+                    <form action="videobjectdect">
+                        <input type="submit" value="实时检测" multiple="multiple" style="align-content: center"/>
+                    </form>
+                </div>
+            </div>
         </div>
 
-        <div class="unslate_co--section bg-light" id="testimonial-section">
-          <div class="container">
-            <div
-              class="section-heading-wrap text-center mb-5"
-              data-aos="fade-up"
-            >
-              <h2 class="heading-h2 text-center divider">关于我们</h2>
-            </div>
-          </div>
+    </div>
 
-          <div class="owl-carousel testimonial-slider" data-aos="fade-up">
-            <div>
-              <div class="testimonial-v1">
-                <div class="testimonial-inner-bg">
-                  <blockquote>成员： 豆子青 乐上天 龙会飞 满的粥</blockquote>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="testimonial-v1">
-                <div class="testimonial-inner-bg">
-                  <div class="testimonial-author-info">
-                    <span class="d-block position"
-                      >Product Designer @Shopify</span
-                    >
-                  </div>
-                  <blockquote>
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove right at the
-                    coast of the Semantics, a large language ocean. A small
-                    river named Duden flows by their place and supplies it with
-                    the necessary regelialia. It is a paradisematic country, in
-                    which roasted parts of sentences fly into your mouth.
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="testimonial-v1">
-                <div class="testimonial-inner-bg">
-                  <div class="testimonial-author-info">
-                    <span class="d-block position"
-                      >Product Designer @Twitter</span
-                    >
-                  </div>
-                  <blockquote>
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove right at the
-                    coast of the Semantics, a large language ocean. A small
-                    river named Duden flows by their place and supplies it with
-                    the necessary regelialia. It is a paradisematic country, in
-                    which roasted parts of sentences fly into your mouth.
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-          </div>
+
+</div>
+
+<div class="unslate_co--section bg-light" id="testimonial-section">
+    <div class="container">
+        <div
+                class="section-heading-wrap text-center mb-5"
+                data-aos="fade-up"
+        >
+            <h2 class="heading-h2 text-center divider">关于我们</h2>
         </div>
-        <!-- END testimonial -->
+    </div>
 
-        <div class="unslate_co--section" id="contact-section">
-          <div class="container">
-            <div
-              class="section-heading-wrap text-center mb-5"
-              data-aos="fade-up"
-            >
-              <h2 class="heading-h2 text-center divider">Contact Me</h2>
+    <div class="owl-carousel testimonial-slider" data-aos="fade-up">
+        <div>
+            <div class="testimonial-v1">
+                <div class="testimonial-inner-bg">
+                    <blockquote>成员： 豆子青 乐上天 龙会飞 满的粥</blockquote>
+                </div>
             </div>
+        </div>
+        <div>
+            <div class="testimonial-v1">
+                <div class="testimonial-inner-bg">
+                    <div class="testimonial-author-info">
+                    <span class="d-block position"
+                    >项目背景</span
+                    >
+                    </div>
+                    <blockquote>
+                        目前，由于计算机能力和相关理论的发展获得了重大突破，
+                        基于深度学习的图像检测与识别技术已经广泛应用到人们的生产生活中。
+                        将深度学习的技术应用到动物图像识别中，
+                        可以更好的帮助社会管理者和政府全面有效的对野生动物进行保护和监管，
+                        这也正是保护和识别野生动物的关键，
+                        同时这对整个自然和社会的和谐发展具有极大的推动作用。
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="testimonial-v1">
+                <div class="testimonial-inner-bg">
+                    <div class="testimonial-author-info">
+                    <span class="d-block position"
+                    >项目技术支持</span
+                    >
+                    </div>
+                    <blockquote>
+                        AlexNet
+                        Flask,Jiajin2
+                        Yoloy3...
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END testimonial -->
 
-            <div class="row justify-content-between">
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+<div class="unslate_co--section" id="contact-section">
+    <div class="container">
+        <div
+                class="section-heading-wrap text-center mb-5"
+                data-aos="fade-up"
+        >
+            <h2 class="heading-h2 text-center divider">Contact Me</h2>
+        </div>
+
+        <div class="row justify-content-between">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <form
-                  method="post"
-                  class="form-outline-style-v1"
-                  id="contactForm"
+                        method="post"
+                        class="form-outline-style-v1"
+                        id="contactForm"
                 >
-                  <div class="form-group row mb-0">
-                    <div class="col-lg-6 form-group">
-                      <label for="name">Name</label>
-                      <input
-                        name="name"
-                        type="text"
-                        class="form-control"
-                        id="name"
-                      />
+                    <div class="form-group row mb-0">
+                        <div class="col-lg-6 form-group">
+                            <label for="name">Name</label>
+                            <input
+                                    name="name"
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                            />
+                        </div>
+                        <div class="col-lg-6 form-group">
+                            <label for="email">Email</label>
+                            <input
+                                    name="email"
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                            />
+                        </div>
+                        <div class="col-lg-12 form-group">
+                            <label for="message">Write your message...</label>
+                            <textarea
+                                    name="message"
+                                    id="message"
+                                    cols="30"
+                                    rows="7"
+                                    class="form-control"
+                            ></textarea>
+                        </div>
                     </div>
-                    <div class="col-lg-6 form-group">
-                      <label for="email">Email</label>
-                      <input
-                        name="email"
-                        type="email"
-                        class="form-control"
-                        id="email"
-                      />
+                    <div class="form-group row">
+                        <div class="col-md-12 d-flex align-items-center">
+                            <input
+                                    type="submit"
+                                    class="btn btn-primary mr-3"
+                                    value="Send Message"
+                            />
+                            <span class="submitting"></span>
+                        </div>
                     </div>
-                    <div class="col-lg-12 form-group">
-                      <label for="message">Write your message...</label>
-                      <textarea
-                        name="message"
-                        id="message"
-                        cols="30"
-                        rows="7"
-                        class="form-control"
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <div class="col-md-12 d-flex align-items-center">
-                      <input
-                        type="submit"
-                        class="btn btn-primary mr-3"
-                        value="Send Message"
-                      />
-                      <span class="submitting"></span>
-                    </div>
-                  </div>
                 </form>
                 <div id="form-message-warning" class="mt-4"></div>
                 <div id="form-message-success">
-                  Your message was sent, thank you!
+                    Your message was sent, thank you!
                 </div>
-              </div>
+            </div>
 
-              <div class="col-md-4" data-aos-delay="200">
+            <div class="col-md-4" data-aos-delay="200">
                 <div class="contact-info-v1">
-                  <div class="d-block">
-                    <span class="d-block contact-info-label">Email</span>
-                    <a href="#" class="contact-info-val">info@untree.co</a>
-                  </div>
-                  <div class="d-block">
-                    <span class="d-block contact-info-label">Phone</span>
-                    <a href="#" class="contact-info-val">+12 345 6789 012</a>
-                  </div>
-                  <div class="d-block">
-                    <span class="d-block contact-info-label">Address</span>
-                    <address class="contact-info-val">
-                      43 Raymouth Rd. Baltemoer, <br />
-                      London 3910
-                    </address>
-                  </div>
+                    <div class="d-block">
+                        <span class="d-block contact-info-label">Email</span>
+                        <a href="#" class="contact-info-val">757796844@qq.com</a>
+                    </div>
+                    <div class="d-block">
+                        <span class="d-block contact-info-label">Phone</span>
+                        <a href="#" class="contact-info-val">+110</a>
+                    </div>
+                    <div class="d-block">
+                        <span class="d-block contact-info-label">Address</span>
+                        <address class="contact-info-val">
+                             理塘<br/>
+                        </address>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <!-- END .unslate_co-site-inner -->
-
-      <footer class="unslate_co--footer unslate_co--section">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-7">
-              <div class="footer-site-logo">
-                <a href="#">Untreefolio<span>.</span></a>
-              </div>
-
-              <ul class="list-unstyled social-icons light">
-                <li>
-                  <a href="#"><span class="icon-facebook"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-twitter"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-linkedin"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-google"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-play"></span></a>
-                </li>
-              </ul>
-
-              <p class="site-copyright">
-                <small
-                  >Copyright &copy;
-                  <script>
-                    document.write(new Date().getFullYear());
-                  </script>
-                  . All Rights Reserved. &mdash; Designed with love by
-                  <a
-                    href="https://untree.co"
-                    target="_blank"
-                    rel="nofollow noopener"
-                    >Untree.co</a
-                  >
-                  &bullet;
-                  <a
-                    href="https://untree.co/license"
-                    target="_blank"
-                    rel="nofollow noopener"
-                    >License</a
-                  >
-                </small>
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
+</div>
+</div>
+<!-- END .unslate_co-site-inner -->
 
-    <!-- Loader -->
-    <div id="unslate_co--overlayer"></div>
-    <div class="site-loader-wrap">
-      <div class="site-loader"></div>
-    </div>
+<footer class="unslate_co--footer unslate_co--section">
 
-    <script src="static/js/scripts-dist.js"></script>
-    <script src="static/js/main.js"></script>
-  </body>
+</footer>
+</div>
+
+<!-- Loader -->
+<div id="unslate_co--overlayer"></div>
+<div class="site-loader-wrap">
+    <div class="site-loader"></div>
+</div>
+
+<script src="static/js/scripts-dist.js"></script>
+<script src="static/js/main.js"></script>
+</body>
 </html>

@@ -57,12 +57,12 @@ def upload_file():
         filenames.append(file.filename)
 
     #调用训练模型并返回结果
-    commmand = "python distinguish.py "
+    commmand = "python distinguish.py"
 
     #获取结果并返回
     result = os.popen(commmand).read()
     results = literal_eval(result)
-    print(results)
+    # print(results)
     dicti = dict(zip(filenames, results))
 
     # //print(endResult)
